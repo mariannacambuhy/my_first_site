@@ -1,0 +1,149 @@
+/*Definições iniciais do estilo global*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+   
+}
+
+h1{
+    text-align: center;
+    color:rgb(134, 104, 255);
+}
+
+h2{
+    color:rgb(134, 104, 255) ;
+}
+
+/*Estilos para o container dos cartões*/
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:100px;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+/*Estilos para os cartões individuais*/
+
+.card{
+    background-color:rgb(134, 104, 255);
+    border: 1px solid peru;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(red, green, blue, alpha);
+    border-radius: 30px;
+
+}
+
+/*Estilos aplicados quando a largura da tela é de no maximo 768px*/
+
+@media(max-width:768px){
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(31, 32, 48);
+}
+
+nav > a{
+    text-decoration:none;
+    color:rgb(134, 104, 255);
+    font-weight: 800;
+    font-size: 32px;
+    font-family: yellowtail, serif;
+}
+
+nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+}
+
+ nav ul li {
+
+    text-align: center;
+    width: 100%;
+ }
+
+ nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color:white;
+ }
+
+ nav ul li a:hover{
+    color: rgb(134, 104, 255);
+    border-bottom: 1px rgb(70, 9, 213);
+ }
+
+
+
+
+
+ .game-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.game{
+    border: 1px solid rgb(134, 104, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}                      
+
+.game img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  
+}
+
+.game p{
+    margin: 0;
+    margin-bottom: 10px;
+    
+}
+
+footer {
+    align-items: center;
+ }
+ 
+ footer a:link, a:visited{
+    background-color: rgb(134, 104, 255);
+    color: #ffffff;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+ }
+ 
+ footer a:hover, a:active{
+    background-color: blue;
+ }
+ 
+ footer{
+    line-height: 20px;
+    height: 10px;
+    text-align: center;
+    color: #ffffff;
+ 
+ 
+ }
